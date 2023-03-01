@@ -15,3 +15,4 @@ const closeModal = function () {
 
 btShowModal.forEach((btn) => btn.addEventListener("click", openModal));
 btCloseModal.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
