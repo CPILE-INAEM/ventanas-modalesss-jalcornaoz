@@ -1,11 +1,11 @@
-const modalButton = document.querySelectorAll(".show-modal");
-const modalHidden = document.querySelector(".modal");
-const overlayHidden = document.querySelector(".overlay");
+const btShowModal = document.querySelectorAll(".show-modal");
+const btCloseModal = document.querySelector(".close-modal");
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
 
-modalButton.addEventListener("click", fnMuestraModal);
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
 
-function fnMuestraModal() {
-  console.log("Has pulsado el botón");
-  modalHidden.classList.remove("hidden");
-  overlayHidden.classList.remove("hidden");
-}
+btShowModal.forEach((btn) => btn.addEventListener("click", openModal));
