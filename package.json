@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "scp -r -P 22123 ./index.html ./script.js ./style.css alberto@alberto.certweb.infenlaces.com:/home/alberto/albertoproxyphpmysql_v4/sitioweb/ventanas-modales"
   },
   "author": "",
   "license": "ISC",

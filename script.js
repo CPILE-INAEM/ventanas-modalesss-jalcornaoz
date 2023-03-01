@@ -19,6 +19,7 @@ const escKey = function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
     closeModal();
   }
+  e.stopPropagation;
 };
 
 //espera que se pulse un botón
